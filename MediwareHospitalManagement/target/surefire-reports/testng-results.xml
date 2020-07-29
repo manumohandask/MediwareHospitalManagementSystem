@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Mediware Hospital Management System" duration-ms="31981" started-at="2020-07-29T07:00:52Z" finished-at="2020-07-29T07:01:24Z">
+    <groups>
+    </groups>
+    <test name="Mediware Test Cases" duration-ms="31981" started-at="2020-07-29T07:00:52Z" finished-at="2020-07-29T07:01:24Z">
+      <class name="testScenarios.SelectPatientScenario">
+        <test-method status="PASS" signature="MediwareSucessfullPatientSearch()[pri:3, instance:testScenarios.SelectPatientScenario@6ee12bac]" name="MediwareSucessfullPatientSearch" duration-ms="1742" started-at="2020-07-29T07:01:22Z" finished-at="2020-07-29T07:01:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MediwareSucessfullPatientSearch -->
+      </class> <!-- testScenarios.SelectPatientScenario -->
+      <class name="testScenarios.AppoinmentScenario">
+        <test-method status="PASS" signature="MediwareSucessfullApplicationSelection()[pri:2, instance:testScenarios.AppoinmentScenario@157632c9]" name="MediwareSucessfullApplicationSelection" duration-ms="13040" started-at="2020-07-29T07:01:09Z" finished-at="2020-07-29T07:01:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MediwareSucessfullApplicationSelection -->
+      </class> <!-- testScenarios.AppoinmentScenario -->
+      <class name="testScenarios.LoginScenario">
+        <test-method status="PASS" signature="MediwaresuccessfullLogin()[pri:1, instance:testScenarios.LoginScenario@36f0f1be]" name="MediwaresuccessfullLogin" duration-ms="17163" started-at="2020-07-29T07:00:52Z" finished-at="2020-07-29T07:01:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MediwaresuccessfullLogin -->
+      </class> <!-- testScenarios.LoginScenario -->
+    </test> <!-- Mediware Test Cases -->
+  </suite> <!-- Mediware Hospital Management System -->
+</testng-results>

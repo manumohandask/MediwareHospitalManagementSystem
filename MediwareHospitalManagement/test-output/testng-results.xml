@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Mediware Hospital Management System" duration-ms="18876" started-at="2020-07-29T12:18:42 IST" finished-at="2020-07-29T12:19:01 IST">
+    <groups>
+    </groups>
+    <test name="Mediware Test Cases" duration-ms="18876" started-at="2020-07-29T12:18:42 IST" finished-at="2020-07-29T12:19:01 IST">
+      <class name="testScenarios.SelectPatientScenario">
+        <test-method status="PASS" signature="MediwareSucessfullPatientSearch()[pri:3, instance:testScenarios.SelectPatientScenario@17d677df]" name="MediwareSucessfullPatientSearch" duration-ms="1247" started-at="2020-07-29T12:18:59 IST" finished-at="2020-07-29T12:19:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MediwareSucessfullPatientSearch -->
+      </class> <!-- testScenarios.SelectPatientScenario -->
+      <class name="testScenarios.AppoinmentScenario">
+        <test-method status="PASS" signature="MediwareSucessfullApplicationSelection()[pri:2, instance:testScenarios.AppoinmentScenario@76b0bfab]" name="MediwareSucessfullApplicationSelection" duration-ms="5937" started-at="2020-07-29T12:18:53 IST" finished-at="2020-07-29T12:18:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MediwareSucessfullApplicationSelection -->
+      </class> <!-- testScenarios.AppoinmentScenario -->
+      <class name="testScenarios.LoginScenario">
+        <test-method status="PASS" signature="MediwaresuccessfullLogin()[pri:1, instance:testScenarios.LoginScenario@7a765367]" name="MediwaresuccessfullLogin" duration-ms="11632" started-at="2020-07-29T12:18:42 IST" finished-at="2020-07-29T12:18:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MediwaresuccessfullLogin -->
+      </class> <!-- testScenarios.LoginScenario -->
+    </test> <!-- Mediware Test Cases -->
+  </suite> <!-- Mediware Hospital Management System -->
+</testng-results>
