@@ -40,7 +40,7 @@ public class ExtentReportEmailer {
 		attachment.setName("ExtentReport");
 		email.attach(attachment);
 		email.send();
-		System.out.println("-----------emailsend---------");
+		System.out.println("------emailsend--------");
 
 	}
 
