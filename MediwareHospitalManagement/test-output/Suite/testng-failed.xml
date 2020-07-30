@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="extentReportListner.MediwareExtentReporter"/>
+    <listener class-name="testListner.MediwareTestListner"/>
+  </listeners>
+  <test thread-count="5" name="MediwareAutomation(failed)">
     <classes>
-      <class name="testScenarios.AppoinmentScenario">
+      <class name="testScenario_SelectpatientScenario.SelectPatientScenario">
         <methods>
-          <include name="SucessfullTimeSelection"/>
+          <include name="MediwareSucessfullPatientSearch"/>
         </methods>
-      </class> <!-- testScenarios.AppoinmentScenario -->
-      <class name="testScenarios.SelectPatientScenario">
-        <methods>
-          <include name="SucessfullPatientSearch"/>
-        </methods>
-      </class> <!-- testScenarios.SelectPatientScenario -->
+      </class> <!-- testScenario_SelectpatientScenario.SelectPatientScenario -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- MediwareAutomation(failed) -->
 </suite> <!-- Failed suite [Suite] -->

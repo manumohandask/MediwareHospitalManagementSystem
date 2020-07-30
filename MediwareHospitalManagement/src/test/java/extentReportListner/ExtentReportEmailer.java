@@ -6,6 +6,7 @@ import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.MultiPartEmail;
 
 import dataPackages.HashMapDataReader;
+
 /*
  * author Manu Mohan
  * For sending the ExtentReport through Email
@@ -34,7 +35,8 @@ public class ExtentReportEmailer {
 		email.addTo(emailto);
 
 		EmailAttachment attachment = new EmailAttachment();
-		attachment.setPath("F:\\Mediware\\ExtentReport\\MediwareExtentReport.html");
+		attachment.setPath(
+				"C:\\Users\\Admin\\git\\MediwareHospitalManagementSystem\\MediwareHospitalManagement\\ExtentReport\\MediwareExtentReport.html");
 		attachment.setDisposition(EmailAttachment.ATTACHMENT);
 		attachment.setDescription("ExtentReport of Mediware Automation");
 		attachment.setName("ExtentReport");

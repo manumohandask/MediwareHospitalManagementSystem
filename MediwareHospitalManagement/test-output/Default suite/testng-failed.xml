@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScenarios.AppoinmentScenario">
+      <class name="testScenario_SelectpatientScenario.SelectPatientScenario">
         <methods>
-          <include name="SucessfullApplicationSelection"/>
-          <include name="SucessfullAppoinmentSelection"/>
-          <include name="init"/>
+          <include name="MediwareSucessfullPatientSearch"/>
         </methods>
-      </class> <!-- testScenarios.AppoinmentScenario -->
+      </class> <!-- testScenario_SelectpatientScenario.SelectPatientScenario -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

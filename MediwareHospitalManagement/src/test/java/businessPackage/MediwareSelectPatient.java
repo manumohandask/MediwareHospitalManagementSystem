@@ -1,6 +1,8 @@
 package businessPackage;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.asserts.SoftAssert;
 
 import basePackage.Base;
 import helperPackages.ButtonHelper;
@@ -14,6 +16,8 @@ public class MediwareSelectPatient extends Base {
 	By SearchPatient = By.xpath("//button[@id='btnSearch']");
 	By SelectPatient = By.id("grdPatients_imgEdit_0");
 	By SavePatient = By.xpath("//button[@id='btnSaveAppointment']");
+
+	
 
 	// For searching the patient after entering the patientid
 	public void SearchPatientInMediware() {
@@ -34,6 +38,7 @@ public class MediwareSelectPatient extends Base {
 	public void SavePatientInMediware() {
 		ButtonHelper SavePatientButtonHelper = new ButtonHelper(driver);
 		SavePatientButtonHelper.buttonClick(SavePatient);
+		
 
 	}
 

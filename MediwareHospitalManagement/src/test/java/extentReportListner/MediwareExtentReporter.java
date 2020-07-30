@@ -19,17 +19,19 @@ import org.testng.xml.XmlSuite;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
 /*
  * author :Manu Mohan
  */
 public class MediwareExtentReporter implements IReporter {
-	
+
 	private ExtentReports extent;
 
-	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
-			String outputDirectory) {
-		extent = new ExtentReports("F:\\Mediware\\ExtentReport"+ File.separator
-				+ "MediwareExtentReport.html", true);
+	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
+		extent = new ExtentReports(
+				"C:\\Users\\Admin\\git\\MediwareHospitalManagementSystem\\MediwareHospitalManagement\\ExtentReport"
+						+ File.separator + "MediwareExtentReport.html",
+				true);
 
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();
@@ -45,13 +47,14 @@ public class MediwareExtentReporter implements IReporter {
 
 		extent.flush();
 		extent.close();
-		//For sending the Email 
+
+		// For sending the Email
 		try {
 			ExtentReportEmailer.emailsend();
 		} catch (EmailException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	private void buildTestNodes(IResultMap tests, LogStatus status) {
@@ -70,8 +73,7 @@ public class MediwareExtentReporter implements IReporter {
 				if (result.getThrowable() != null) {
 					test.log(status, result.getThrowable());
 				} else {
-					test.log(status, "Test " + status.toString().toLowerCase()
-							+ "ed");
+					test.log(status, "Test " + status.toString().toLowerCase() + "ed");
 				}
 
 				extent.endTest(test);
@@ -85,7 +87,3 @@ public class MediwareExtentReporter implements IReporter {
 		return calendar.getTime();
 	}
 }
-	
-	
-
-

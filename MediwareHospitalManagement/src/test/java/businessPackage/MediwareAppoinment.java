@@ -1,10 +1,13 @@
 package businessPackage;
 
+import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.testng.asserts.SoftAssert;
 
 import basePackage.Base;
 import helperPackages.TextBoxHelper;
@@ -20,6 +23,10 @@ public class MediwareAppoinment extends Base {
 	By appoinmentButton = By.xpath("//a[contains(@href,'AppointmentView.aspx')]");
 	By timeSelect = By.xpath("//div[@id='DocDiv1']//div[@class='AppNewSlot gray WCPer  NewEvent NewRegistration']");
 	By PatientId = By.xpath("//input[@id=\"txtSearchPatientID\"]");
+	By Close = By.xpath("//button[@id='btnCloseAppointment']");
+	String title = "Mediware CAS - Centralised Appointments System";
+	By patientName = By.id("txtSearchFullName");
+	SoftAssert mediassert = new SoftAssert();
 
 	// For clicking the Application Selector button
 	public void ApplicationSelectionInMediware() throws Exception {
@@ -33,6 +40,7 @@ public class MediwareAppoinment extends Base {
 		driver.switchTo().frame("CallingPageDiv");
 		ButtonHelper appoinmentButtonHelper = new ButtonHelper(driver);
 		appoinmentButtonHelper.buttonClick(appoinmentButton);
+		assertEquals(title, driver.getTitle());
 
 	}
 
@@ -52,6 +60,17 @@ public class MediwareAppoinment extends Base {
 		driver.switchTo().frame("AppointmentDiv");
 		TextBoxHelper patientIdTextBoxHelper = new TextBoxHelper(driver);
 		patientIdTextBoxHelper.SendText(PatientId, patientId);
+		System.out.println(driver.getTitle());
+		WebElement mediPatientName = driver.findElement(patientName);
+		mediassert.assertEquals(true, mediPatientName.isDisplayed());
+	}
+
+	public void CloseMediwareAppoinemt() {
+		// Thread.sleep(4000);
+		ButtonHelper popup = new ButtonHelper(driver);
+		popup.buttonClick(Close);
+		driver.switchTo().defaultContent();
+
 	}
 
 }
