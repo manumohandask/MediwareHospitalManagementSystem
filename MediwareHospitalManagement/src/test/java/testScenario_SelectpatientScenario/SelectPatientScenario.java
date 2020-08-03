@@ -6,16 +6,20 @@ import org.testng.annotations.Test;
 
 import businessPackage.MediwareSelectPatient;
 import clientPackage.AutomationClient;
+import dataPackages.HashMapDataReader;
 //Testcase for MediwareSelectPatient
 public class SelectPatientScenario {
-	
+	public String Opusercredentials;
+	public String userinfo[];
 	
 	@Test()
 	public void MediwareSucessfullPatientSearch() throws Exception {
 		
 		AutomationClient client = new AutomationClient();
 		
-		client.medLogin.loginToMediware("opuser", "123");
+		Opusercredentials = HashMapDataReader.getUserinfo().get("Outpatient");
+		userinfo = Opusercredentials.split("_");
+	    client.medLogin.loginToMediware(userinfo[0],userinfo[1]);
         client.medAppoinment.ApplicationSelectionInMediware();
         client.medAppoinment.AppoinmentSelectionInMediware();
         client.medAppoinment.AppoinmentTimeSelectInMediware(); 

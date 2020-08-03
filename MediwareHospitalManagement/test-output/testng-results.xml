@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="64321" started-at="2020-07-30T13:19:40 IST" finished-at="2020-07-30T13:20:44 IST">
+  <suite name="Suite" duration-ms="58676" started-at="2020-08-03T12:59:14 IST" finished-at="2020-08-03T13:00:13 IST">
     <groups>
     </groups>
-    <test name="MediwareAutomation" duration-ms="64321" started-at="2020-07-30T13:19:40 IST" finished-at="2020-07-30T13:20:44 IST">
+    <test name="MediwareAutomation" duration-ms="58676" started-at="2020-08-03T12:59:14 IST" finished-at="2020-08-03T13:00:13 IST">
       <class name="testScenario_LoginScenario.OpuserLoginScenario">
-        <test-method status="PASS" signature="MediwaresuccessfullLogin()[pri:0, instance:testScenario_LoginScenario.OpuserLoginScenario@33f88ab]" name="MediwaresuccessfullLogin" duration-ms="21804" started-at="2020-07-30T13:19:40 IST" finished-at="2020-07-30T13:20:02 IST">
+        <test-method status="PASS" signature="MediwaresuccessfullLogin()[pri:0, instance:testScenario_LoginScenario.OpuserLoginScenario@33f88ab]" name="MediwaresuccessfullLogin" duration-ms="15736" started-at="2020-08-03T12:59:14 IST" finished-at="2020-08-03T12:59:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MediwaresuccessfullLogin -->
       </class> <!-- testScenario_LoginScenario.OpuserLoginScenario -->
       <class name="testScenario_SelectpatientScenario.SelectPatientScenario">
-        <test-method status="PASS" signature="MediwareSucessfullPatientSearch()[pri:0, instance:testScenario_SelectpatientScenario.SelectPatientScenario@2d8f65a4]" name="MediwareSucessfullPatientSearch" duration-ms="20788" started-at="2020-07-30T13:20:23 IST" finished-at="2020-07-30T13:20:44 IST">
+        <test-method status="PASS" signature="MediwareSucessfullPatientSearch()[pri:0, instance:testScenario_SelectpatientScenario.SelectPatientScenario@2d8f65a4]" name="MediwareSucessfullPatientSearch" duration-ms="21343" started-at="2020-08-03T12:59:52 IST" finished-at="2020-08-03T13:00:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MediwareSucessfullPatientSearch -->
       </class> <!-- testScenario_SelectpatientScenario.SelectPatientScenario -->
       <class name="testScenario_AppoinmentScenario.AppoinmentScenario">
-        <test-method status="PASS" signature="MediwareSucessfullApplicationSelection()[pri:0, instance:testScenario_AppoinmentScenario.AppoinmentScenario@27a8c74e]" name="MediwareSucessfullApplicationSelection" duration-ms="21672" started-at="2020-07-30T13:20:02 IST" finished-at="2020-07-30T13:20:23 IST">
+        <test-method status="PASS" signature="MediwareSucessfullApplicationSelection()[pri:0, instance:testScenario_AppoinmentScenario.AppoinmentScenario@27a8c74e]" name="MediwareSucessfullApplicationSelection" duration-ms="21496" started-at="2020-08-03T12:59:30 IST" finished-at="2020-08-03T12:59:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MediwareSucessfullApplicationSelection -->
